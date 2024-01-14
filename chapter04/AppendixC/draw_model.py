@@ -18,6 +18,13 @@ blues = matplotlib.colormaps['Blues'];
 def shade(face,color_map=blues,light=(1,2,3)):
     return color_map(1 - dot(unit(normal(face)), unit(light)))
 
+# 求点积
+def dot(u,v):
+  return sum(coord1* coord2 for coord1,coord2 in zip(u,v));
+
+def multiply_matrix_vector(a,b):
+  return tuple(dot(b,col) for col in zip(*a))
+
 def Axes():
     axes =  [
         [(-1000,0,0),(1000,0,0)],
