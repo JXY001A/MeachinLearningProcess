@@ -1,4 +1,4 @@
-from transforms import *
+from .transforms import *
 from math import pi
 
 with open("/Users/jxy001a/Code/MeachinLearningProcess/chapter04/AppendixC/teapot.off") as f:
