@@ -1,4 +1,3 @@
-import sys;
 from AppendixC import draw_teapot;
 from AppendixC import vectors;
 
