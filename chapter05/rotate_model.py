@@ -17,5 +17,3 @@ def get_rotation_matrix(t):
 
 draw_teapot.draw_model(draw_teapot.original_triangles,get_matrix=get_rotation_matrix);
 
-
-  

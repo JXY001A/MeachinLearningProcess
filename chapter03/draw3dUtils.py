@@ -7,7 +7,7 @@ from matplotlib.collections import PatchCollection
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D, proj3d
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-from colors import *
+from .colors import *
 
 # https://github.com/orlandpm/Math-for-Programmers/issues/15#issuecomment-1361427820 解决： ['FancyArrow3D' object has no attribute 'do_3d_projection'] 问题
 class FancyArrow3D(FancyArrowPatch):
