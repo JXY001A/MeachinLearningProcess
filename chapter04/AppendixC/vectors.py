@@ -68,7 +68,8 @@ def unit(v):
 
 def linear_combination(scalars,*vectors):
     scaled = [scale(s,v) for s,v in zip(scalars,vectors)]
-    return add(*scaled)
+    result = add(*scaled);
+    return result;
 
 def multiply_matrix_vector(matrix, vector):
     return linear_combination(vector, *zip(*matrix))

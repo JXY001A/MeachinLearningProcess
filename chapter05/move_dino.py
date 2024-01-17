@@ -25,22 +25,36 @@ def polygon_segment_3d(points,color="blue"):
 
 dino_3d_vectors = [(x,y,1) for x,y in dino_vectors];
 
-magic_matrix = (
-  (1,0,3),
+magic_matrix = ( 
+  (1,0,3), 
   (0,1,1),
   (0,0,1));
 
-translated_v = [multiply_matrix_vector(magic_matrix,v) for v in dino_3d_vectors]
-
-# draw3d(
-#   Points3D(*translated_v,color="blue"),
-#   *polygon_segment_3d(translated_v),
-#   Points3D(*dino_3d_vectors,color="red"),
-#   *polygon_segment_3d(dino_3d_vectors,color="red")
-# );
+def multiply_matrix_vector2(matrix,vector):
+  middleVectors = tuple(tuple(vi * s for vi in v)  for s,v in zip(vector,zip(*matrix)))
+  return  tuple(map(sum,zip(*middleVectors)))
 
 
-print(list(zip(magic_matrix,(1,2,3))))
+translated_v = [multiply_matrix_vector2(magic_matrix,v) for v in dino_3d_vectors]
+
+draw3d(
+  Points3D(*translated_v,color="blue"),
+  *polygon_segment_3d(translated_v,color="blue"),
+  Points3D(*dino_3d_vectors,color="red"),
+  *polygon_segment_3d(dino_3d_vectors,color="red")
+);
+
+
+
+
+# print(multiply_matrix_vector(magic_matrix,(0,-1,1)))
+# print(multiply_matrix_vector2(magic_matrix,(0,-1,1)))
+
+
+
+# print(sum(list((0,-1,1))))
+# multiply_matrix_vector2(magic_matrix,(0,-1,1)); 
+# print(list(zip(magic_matrix,(1,2,3))))
 # draw3d(*polygon_segment_3d(dino_3d_vectors));
 
 # print(zip(*(1,3,4)))
