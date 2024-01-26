@@ -7,5 +7,5 @@ def volume(t):
 def flow_rate(t):
     return 3*(t-4)**2 / 64
   
-plot_volume(volume,0,10);
-plot_flow_rate(flow_rate,0,10);
+# plot_volume(volume,0,10);
+# plot_flow_rate(flow_rate,0,10);
