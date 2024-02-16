@@ -19,5 +19,5 @@ def approximate_volume_function(q,v0,dt):
     return approximate_volume(q,v0,dt,T);
   return volume_function;
   
-plot_function(approximate_volume_function(flow_rate,2.3,0.5),0,10);
+plot_function(approximate_volume_function(flow_rate,2.3,0.01),0,10);
 plot_function(volume,0,10);
