@@ -22,4 +22,13 @@ def trajectory(theta,speed=20,height=0,dt=0.01,g=-9.81):
     
   
 # trajectory(45)
-plot_trajectories(trajectory(45),trajectory(60))
+# plot_trajectories(trajectory(45),trajectory(60))
+def lading_pos(traj):
+  return traj[1][-1]  
+
+def hang_time(traj):
+  return traj[0][-1] 
+
+
+def max_height(traj):
+  return traj[2][-1]  
