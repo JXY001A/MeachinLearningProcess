@@ -26,7 +26,7 @@ def simple(f,start,end,count):
 
 
 
-sinusoid = make_sinusoid(441,8000)
+sinusoid = make_sinusoid(441,10000)
 arr = simple(sinusoid,0,1,44100)
 # print(arr)
 
