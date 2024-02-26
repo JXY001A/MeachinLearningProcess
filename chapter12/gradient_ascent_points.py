@@ -78,16 +78,16 @@ def gradient_ascent_points(f,xstart,ystart,tolerance=1e-6):
   return xs, ys
 
 
-result = gradient_ascent(landing_distance,36,83);
+# result = gradient_ascent(landing_distance,36,83);
 
 
-scalar_field_heatmap(landing_distance,35,40,80,100)
-plt.scatter([36,37.58114751557887],[83,89.99992616039857],c='k',s=75)
-plt.plot(*gradient_ascent_points(landing_distance,36,83),c='k')
-plt.xlabel('theta')
-plt.ylabel('phi')
-plt.gcf().set_size_inches(9,7)
-plt.show()
+# scalar_field_heatmap(landing_distance,35,40,80,100)
+# plt.scatter([36,37.58114751557887],[83,89.99992616039857],c='k',s=75)
+# plt.plot(*gradient_ascent_points(landing_distance,36,83),c='k')
+# plt.xlabel('theta')
+# plt.ylabel('phi')
+# plt.gcf().set_size_inches(9,7)
+# plt.show()
     
   
 

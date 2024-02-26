@@ -38,13 +38,13 @@ def g(x):
   return 1-x
 
 
-sum_error_f = sum_error(f,test_data)
-sum_error_g = sum_error(g,test_data)
-print('sum_error_f',sum_error_f,'sum_error_g',sum_error_g)
+# sum_error_f = sum_error(f,test_data)
+# sum_error_g = sum_error(g,test_data)
+# print('sum_error_f',sum_error_f,'sum_error_g',sum_error_g)
 
-sum_squared_error_f = sum_squared_error(f,test_data)
-sum_squared_error_g = sum_squared_error(g,test_data)
-print('sum_squared_error_f',sum_squared_error_f,'sum_squared_error_g',sum_squared_error_g)
+# sum_squared_error_f = sum_squared_error(f,test_data)
+# sum_squared_error_g = sum_squared_error(g,test_data)
+# print('sum_squared_error_f',sum_squared_error_f,'sum_squared_error_g',sum_squared_error_g)
 
 
 
