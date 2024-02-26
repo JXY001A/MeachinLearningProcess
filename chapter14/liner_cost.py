@@ -34,6 +34,8 @@ def gradient_descent(f,xstart,ystart,tolerance=1e-6):
   while length(grad) > tolerance:
     x -= 0.01 * grad[0]
     y -= 0.01 * grad[1]
+    # x -= grad[0]
+    # y -= grad[1]
     grad = approx_gradient(f,x,y)
   return x,y
   
@@ -76,9 +78,10 @@ def scaled_exp_coefficient_cost(s,t):
 # 梯度下降线性训练 : 其中 c,d 为线性模型最佳参数
 # c,d = gradient_descent(scaled_cost_function,0,0)
 
+# print('c,d',c,d)
 # 梯度下降非线形训练: 其中 s,t 为指数模型最佳参数
 # s,t = gradient_descent(scaled_exp_coefficient_cost,0,0)
-
+# print('s,t',s,t)
 
 
 def plot_mileage_price(cars):
@@ -102,6 +105,7 @@ def p(x):
 def k(x):
   s = 0.6235404892844091 
   t = -0.07686877731083401
+
   q = 30000 * s
   r = t * 1e-4
   return q * exp(r*x)
