@@ -29,6 +29,3 @@ def test_classifier(classifier,data):
   
   return true_count/(true_count+false_count)
 
-ratio = test_classifier(bwm_finder,all_car_data)
-
-print('ratio',ratio)
